@@ -4,7 +4,9 @@
   font-family: "Manrope", sans-serif;
   font-size: 17px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #faf8f5;
 }
@@ -99,6 +101,8 @@ body {
   box-shadow: 4px 4px 10px #aa9ae3;
   cursor: pointer;
 }
+/*Section-1*/
+
 .Hero-Section > div,
 .Hero-Section > p {
   display: flex;
@@ -189,6 +193,68 @@ h3 {
   animation-delay: 1.4s;
 }
 
+.Learning-Way-header {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Section-2*/
+
+.Learning-Way-header p {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: #f0eaf7;
+  margin: 10px 20px;
+  padding: 25px;
+  border-radius: 10px;
+  width: 450%;
+}
+.Cards img {
+  width: 40px;
+}
+.Cards p {
+  width: 90%;
+}
+.Cards {
+  display: flex;
+  margin: 20px;
+}
+.Cards h3 {
+  font-size: x-large;
+  margin-bottom: 50px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  box-shadow: 4px 4px 15px #4a3694;
+  border: 2px solid #6043cb;
+}
+.Learning-Way {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 1px 1000px #2b1c64;
+}
+.Learning-Way > p {
+  border-radius: 10px;
+  border: 2px dashed #553baf;
+  width: 80%;
+  padding: 10px;
+
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
