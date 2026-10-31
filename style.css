@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0 ;
+}
+body{
+    background-color:FCF7F4;
+    color:333333;
+    font-family:'Manrope', Arial, sans-serif;
+    font-size:17px;;
+    line-height:1.3;
+
+}
+a{
+    color:#553BAF;
+    text-decoration:none;
+    transition:all 0.25s ease-in-out; ;
+
+}
+a:hover{
+    color:#483494;
+}
+h1,h2,h3{
+    font-family: 'Fraunces', Georgia, serif;
+    color:#2C275E;
+    line-height:1.25;
+}
+h1{
+      font-size:52px;
+      font-weight:700;
+      margin-bottom:20px;
+
+}h2{
+    font-size:38px;
+    font-weight:600;
+    margin-bottom:20px;
+    text-align:center;
+
+}
+h3{
+    font-size:23px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+header{
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    box-shadow:0 4px 16px rgba(0, 0, 0, 0.03);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+.SkillSwap-Home strong{
+    font-family:'Fraunces', Georgia, serif;
+    font-size:26px;
+    color:#553BAF;
+
+}
+.Main-navigation ul{
+    display:flex;
+    list-style:none;
+    gap:23px;
+    align-items:center;
+}
+.Main-navigation a{
+    font-size:15px;
+    font-family:'Manrope', Arial, sans-serif;;
+    font-weight:600;
+    color:#2C275E;
+}
+.Main-navigation a:hover, .Main-navigation a[aria-current="page"]{
+    color:#553BAF;
+    
+}
+main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:40px 20px 80px;
+}
+section{
+    margin-bottom:60px;
+}
+.hero-title{
+    text-align:center;
+    background-color:#F0EAF7;
+    padding:60px 30px;
+    border-radius:18px;
+    border:1px solid #DFD5F4;
+}
+.hero-title p{
+
+    font-size:20px;
+    max-width:650px;
+    margin:0 auto 30px;
+    color:#2C275E;
+}
+.hero-title p a,
+.primary-button{
+    display:inline-block;
+    background-color:#553BAF;
+    color:#FFFFFF;
+    font-family:'Manrope', Arial, sans-serif;
+    font-size:16px;
+    font-weight:700;
+    padding:14px 28px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(85, 59, 175, 0.25);
+
+}
+.hero-title p a:hover,
+.primary-button:hover{
+    background-color:#483494;
+    transform:translateY(-2px);
+
+}
+.secondary-button{
+     display:inline-block;
+    background-color:transparent;
+    color:#FFFFFF;
+    border:2px solid #553BAF;
+    font-family:'Manrope', Arial, sans-serif;
+    font-size:16px;
+    font-weight:700;
+    padding:14px 26px;
+    border-radius:12px;
+}
+.secondary-button:hover{
+    background-color:#DFD5F4;
+    
+}
+.steps-title > p{
+    text-align:center;
+    margin:40px;
+    color:#555555;
+
+}
+.steps-title ol{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:24px;
+    list-style:none;
+    counter-reset:step-counter;
+}
+.steps-title li{
+    background-color:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    position:relative;
+    box-shadow:0px 6px 18px rgba(0, 0, 0, 0.04);
+    border-top:4px solid #6DA5AA;
+    transition:all 0.25s ease-in-out;
+}
+.steps-title li:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 10px 24px rgba(0, 0, 0, 0.08);
+}
+.steps-title li::before{
+    content:"0" counter(step-counter);
+    counter-increment:step-counter;
+    transform:translateX(-50%);
+    background-color:#F0EAF7;
+    color:#553BAF;
+    font-family:'Manrope', Arial, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    border-radius:8px;
+    padding:4px 10px;
+    display:inline-block;
+    margin-bottom:12px;
+
+}
+.benefits-title,.say-title,.privacy-title,.repo-title{
+    background-color:#FFFFFF;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0,4px,16px,rgba(0,0,0,0.03);
+
+}
+.benefits-title ul,.say-title ul{
+      list-style-position:inside;
+      margin-top:16px;
+}
+.benefits-title li,.safe-title li{
+    margin-top:12px;
+}
+.privacy-title {
+      background-color:#F0EAF7;
+      text-align:center;
+    }
+.report-title{
+    border-left:4px solid #F8D4BE;
+      text-align:center;
+}
+
+.faq-title details{
+    background-color:#FFFFFF;
+    padding:18px 24px;
+    border-radius:12px;
+    box-shadow:0,2px,8px,rgba(0,0,0,0.03);
+    margin-bottom:12px;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+}  
+.faq-title details[open]{
+    background-color:#F0EAF7;
+}
+.faq-title summary{
+    font-family:'Manrope', Arial, sans-serif;
+    font-size:16px;
+    font-weight:600;
+    color:#2C275E;
+}
+.faq-title details p{
+    margin-top:12px;
+    color:#444444;
+}
+.cta-title{
+    background:linear-gradient(135deg, #F0EAF7 0%, #FFFFFF 100%);
+    padding:50px 30px;
+    border-radius:18px;
+    border:1px solid #DFD5F4;
+    text-align:center;
+}
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    margin-top:24px;
+    flex-wrap: wrap;
+}
+footer{
+    background-color:#2C275E ;
+    color:#FFFFFF;
+    padding:40px 20px;
+    text-align: center;
+}
+footer nav ul{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style:none ;
+    margin-bottom: 20px;
+}
+footer a{
+    color:#DFD5F4;
+    font-size:14px;
+
+}
+footer a:hover{
+    color:#F8D4BE;
+}
+footer small{
+    font-size:13px ;
+    opacity: 0.8;
+}
+@media(max-width:760px){
+    header{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .Main-navigation ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+         font-size: 28px;
+    }
+}
