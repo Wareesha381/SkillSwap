@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 17px;
+}
+
+body {
+  background-color: #faf8f5;
+}
+
+.Nav-Bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0eaf7;
+  border-radius: 50px;
+  box-shadow: 4px 4px 10px #6043cb;
+  position: sticky;
+  margin: 1% 2%;
+  position: sticky;
+  top: 10px;
+  z-index: 999;
+}
+
+.Nav-Bar,
+.Nav-Bar > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 2% 1%;
+}
+
+.Nav-Bar-Links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Nav-Bar-Links a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+.Nav-Bar-Links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #553baf;
+  transition: width 0.3s ease;
+}
+
+.Nav-Bar-Links a:hover::after {
+  width: 100%;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+}
+
+.Logo > h2 {
+  font-size: xx-large;
+  padding: 3px 10px;
+}
+
+.Logo i {
+  color: #553baf;
+  width: 16%;
+  height: 10%;
+}
+
+.Nav-Bar button {
+  background-color: #5e44bc;
+  color: #f0eaf7;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.Nav-Bar button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+}
