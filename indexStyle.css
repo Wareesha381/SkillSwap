@@ -251,7 +251,6 @@ h3 {
   border: 2px dashed #553baf;
   width: 80%;
   padding: 10px;
-
   margin-top: 70px;
   margin-bottom: 30px;
 }
@@ -284,9 +283,53 @@ h3 {
 }
 
 /*Section-3*/
-.Exchanging-SKills {
+.section3-heading h1 {
   text-align: center;
   margin-top: 100px;
+}
+.section3-heading p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section3-list h3 {
+  font-size: 30px;
+}
+.section3-list {
+  margin-left: 100px;
+}
+.section3-list p {
+  margin-bottom: 20px;
+}
+.section3-list li {
+  list-style-type: none;
+  margin-bottom: 50px;
+  border-left: 4px solid #f8d4be;
+  padding: 20px;
+}
+.section3-list i {
+  color: #553baf;
+  width: 2.5%;
+  height: 10%;
+}
+.Exchanging-Skills button {
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #5d44b9;
+  display: flex;
+  margin-bottom: 80px;
+  flex-direction: row;
+  align-items: center;
+  transition: transform 0.3s ease;
+  margin-left: 150px;
+}
+.Exchanging-Skills button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
 }
 
 /*Footer*/
