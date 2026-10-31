@@ -252,8 +252,66 @@ h3 {
   width: 80%;
   padding: 10px;
 
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.Learning-Way button {
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #5d44b9;
+  display: flex;
+  margin-bottom: 80px;
+  flex-direction: row;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.Learning-Way button:hover {
+  background-color: #553baf;
+}
+
+.Learning-Way > button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
+
+.howitworks img {
+  margin-left: 5px;
+}
+
+/*Section-3*/
+.Exchanging-SKills {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*Footer*/
+.Footer {
+  background-color: #aa9ae3;
+  padding: 20px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.Footer a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  margin-right: 25px;
+}
+
+.Footer-Links a:hover {
+  font-size: bold;
+  text-decoration: underline;
+  font-size: bold;
+  color: #ebebeb;
+}
+.Footer p {
+  margin-top: 20px;
 }
 @keyframes fadeUp {
   from {
