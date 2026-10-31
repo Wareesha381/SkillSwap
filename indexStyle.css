@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-size: 17px;
 }
 
@@ -21,6 +21,9 @@ body {
   position: sticky;
   top: 10px;
   z-index: 999;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .Nav-Bar,
@@ -59,15 +62,19 @@ body {
 .Nav-Bar-Links a:hover::after {
   width: 100%;
 }
-
+.Nav-Bar-Links a:hover {
+  font-weight: bold;
+  color: #4a3694;
+}
 .Logo {
   display: flex;
   align-items: center;
 }
 
 .Logo > h2 {
-  font-size: xx-large;
+  font-size: x-large;
   padding: 3px 10px;
+  margin-top: 10px;
 }
 
 .Logo i {
@@ -90,4 +97,105 @@ body {
   background-color: #4a3694;
   transform: scale(1) translateY(-3px);
   box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
+.Hero-Section > div,
+.Hero-Section > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Hero-Section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #2b1c64, #5e528f, #493f6c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+h3 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.intro-para p {
+  font-family: "Manrope";
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 60%;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 1s;
+}
+#explore,
+#startJourney {
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+#explore {
+  background-color: #5e44bc;
+  color: #fff;
+}
+#explore:hover {
+  background-color: #4a3694;
+}
+#explore:hover,
+#startJourney:hover {
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
+
+#startJourney:hover {
+  background-color: #fff;
+}
+.inner-btn-div {
+  display: flex;
+}
+#startJourney {
+  border: 2px solid #5e44bc;
+}
+
+.inspo {
+  color: #abaaaa;
+  display: block;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
