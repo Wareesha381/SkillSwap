@@ -13,22 +13,21 @@ body {
 
 .Nav-Bar {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #f0eaf7;
   border-radius: 50px;
   box-shadow: 4px 4px 10px #6043cb;
   position: sticky;
-  margin: 1% 2%;
+  margin: 3% 5% 1%;
   position: sticky;
   top: 10px;
   z-index: 999;
   opacity: 0;
   animation: fadeUp 0.9s ease-out forwards;
   animation-delay: 0.2s;
+  justify-content: space-between;
 }
 
-.Nav-Bar,
 .Nav-Bar > div {
   display: flex;
   justify-content: space-between;
@@ -332,9 +331,44 @@ h3 {
   cursor: pointer;
 }
 
+/*Section-4*/
+.Featured-Exchange {
+  box-shadow: 2px 1px 1000px #2b1c64;
+
+  text-align: center;
+}
+.Featured-Exchange h1 {
+  padding-top: 100px;
+}
+.Featured-Exchange > p {
+  margin-bottom: 20px;
+}
+
+/*Section-5*/
+.Final-CTA {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.Head-Buttons {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.Head-Buttons button {
+  transition: transform 0.3s ease;
+}
+
+.Head-Buttons button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
 /*Footer*/
 .Footer {
-  background-color: #aa9ae3;
+  background-color: #51408e;
   padding: 20px;
   margin-top: 80px;
   text-align: center;
@@ -343,18 +377,20 @@ h3 {
 .Footer a {
   width: 100%;
   text-decoration: none;
-  color: #000;
+  color: #c1c1c1;
   margin-right: 25px;
+  font-weight: bolder;
 }
 
 .Footer-Links a:hover {
   font-size: bold;
   text-decoration: underline;
   font-size: bold;
-  color: #ebebeb;
+  color: #ededed;
 }
 .Footer p {
   margin-top: 20px;
+  color: #ededed;
 }
 @keyframes fadeUp {
   from {
