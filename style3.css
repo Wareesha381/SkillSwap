@@ -117,7 +117,7 @@ body {
   flex-direction: column;
 }
 .Hero-Section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: 100px;
 }
 .section-label {
@@ -183,6 +183,7 @@ h3 {
   box-shadow: 2px 2px 10px #5e44bc;
   padding: 40px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .join-layout {
@@ -237,48 +238,6 @@ textarea {
   box-sizing: border-box;
   margin-left: 5px;
   margin-bottom: 15px;
-}
-
-.next-steps-panel {
-  background-color: #f0eaf7;
-  padding: 30px;
-  border-radius: 15px;
-  border-top: 5px solid #5e44bc;
-  position: sticky;
-  top: 120px;
-}
-
-.next-steps-panel h2 {
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.panel-intro {
-  margin-bottom: 25px;
-  color: #555;
-}
-
-.next-step {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.next-step-number {
-  font-weight: bold;
-  color: #5e44bc;
-  font-size: 20px;
-}
-
-.next-step h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-
-.next-step p {
-  font-size: 14px;
-  color: #666;
 }
 
 input[type="text"]:focus,
@@ -385,6 +344,40 @@ input[type="radio"] {
   padding: 10px 20px;
   width: 300%;
   border-radius: 30px;
+}
+#additionalInterests:focus {
+  background-color: #e8e8e8;
+  color: #000;
+}
+#additionalInterests {
+  width: auto;
+  resize: none;
+}
+
+.form-actions button {
+  background-color: #5e44bc;
+  color: #f0eaf7;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border: none;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+i {
+  padding-right: 10px;
+}
+.form-actions button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
+
+/*last Section*/
+.next-steps-panel {
+  text-align: cenetr;
+  width: max-content;
 }
 /*Footer*/
 .Footer {

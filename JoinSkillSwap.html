@@ -56,7 +56,7 @@
         <div class="join-layout">
           <div class="form-column">
             <form class="join-form" id="joinForm">
-              <!-- CARD 1: Personal Info -->
+              <!-- CARD 1 -->
               <div class="form-card">
                 <div class="form-card-heading">
                   <div>
@@ -64,7 +64,6 @@
                     <p>Let's get to know you.</p>
                   </div>
                 </div>
-
                 <div class="form-row">
                   <div class="form-group">
                     <label for="fullName">Full name</label>
@@ -89,7 +88,6 @@
                     />
                   </div>
                 </div>
-
                 <div class="form-row">
                   <div class="form-group">
                     <label for="ageGroup">Age group</label>
@@ -129,36 +127,32 @@
                     <input type="checkbox" name="skills" value="design" />
                     <span class="chip-text">Design</span>
                   </label>
-
-                  <label class="blueprint-chip selected">
+                  <label class="blueprint-chip">
                     <input type="checkbox" name="skills" value="coding" />
                     <span class="chip-text">Coding</span>
                   </label>
-
-                  <label class="blueprint-chip selected">
+                  <label class="blueprint-chip">
                     <input type="checkbox" name="skills" value="cooking" />
                     <span class="chip-text">Cooking</span>
                   </label>
-
                   <label class="blueprint-chip">
                     <input type="checkbox" name="skills" value="music" />
                     <span class="chip-text">Music</span>
                   </label>
-
-                  <label class="blueprint-chip active-chip">
+                  <label class="blueprint-chip">
                     <input type="checkbox" name="skills" value="languages" />
                     <span class="chip-text">Languages</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="skills" value="photography" />
                     <span class="chip-text">Photography</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="skills" value="writing" />
                     <span class="chip-text">Writing</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="skills" value="business" />
                     <span class="chip-text">Business</span>
                   </label>
                 </div>
@@ -178,66 +172,50 @@
                     <p>What are you hoping to gain?</p>
                   </div>
                 </div>
-                 <div class="chip-grid">
+                <div class="chip-grid">
                   <label class="blueprint-chip">
-                    <input type="checkbox" name="skills" value="design" />
+                    <input type="checkbox" name="learn" value="design" />
                     <span class="chip-text">Design</span>
                   </label>
-
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="coding" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="coding" />
                     <span class="chip-text">Coding</span>
                   </label>
-
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="cooking" />
                     <span class="chip-text">Cooking</span>
                   </label>
-
                   <label class="blueprint-chip">
-                    <input type="checkbox" name="skills" value="music" />
+                    <input type="checkbox" name="learn" value="music" />
                     <span class="chip-text">Music</span>
                   </label>
-
-                  <label class="blueprint-chip active-chip">
-                    <input type="checkbox" name="skills" value="languages" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="languages" />
                     <span class="chip-text">Languages</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="photography" />
                     <span class="chip-text">Photography</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="writing" />
                     <span class="chip-text">Writing</span>
                   </label>
-                  <label class="blueprint-chip selected">
-                    <input type="checkbox" name="skills" value="cooking" />
+                  <label class="blueprint-chip">
+                    <input type="checkbox" name="learn" value="business" />
                     <span class="chip-text">Business</span>
                   </label>
                 </div>
                 <input
                   type="text"
-                  id="otherSkills"
-                  name="otherSkills"
-                  placeholder="Other skills you can offer"
+                  id="otherLearn"
+                  name="otherLearn"
+                  placeholder="Other skills you want to learn"
                 />
               </div>
-              </div>
 
-              <!-- CARD 4 -->
+              <!-- CARD 4-->
               <div class="form-card">
-                <div class="form-card-heading">
-                  <div>
-                    <h3>Preferred Learning Method</h3>
-                    <p>How do you learn best?</p>
-                  </div>
-                </div>
-               
-              </div>
-
-              <!-- CARD 5 -->
-              <div class="form-card-availability">
                 <div class="form-card-heading">
                   <div>
                     <h3>Availability</h3>
@@ -245,22 +223,27 @@
                   </div>
                 </div>
                 <div class="chip-availability">
-                  <label class="blueprint-chip-radio ">
-                    <input type="radio" name="skills" value="cooking" />
+                  <label class="blueprint-chip-radio">
+                    <input type="radio" name="availability" value="online" />
                     <span class="chip-text-ava">Online</span>
                   </label>
                   <label class="blueprint-chip-radio">
-                    <input type="radio" name="skills" value="cooking" checked />
+                    <input
+                      type="radio"
+                      name="availability"
+                      value="hybrid"
+                      checked
+                    />
                     <span class="chip-text-ava">Hybrid</span>
                   </label>
-                  <label class="blueprint-chip-radio ">
-                    <input type="radio" name="skills" value="cooking" />
+                  <label class="blueprint-chip-radio">
+                    <input type="radio" name="availability" value="both" />
                     <span class="chip-text-ava">Both</span>
                   </label>
-                  </div>
+                </div>
               </div>
 
-              <!-- CARD 6 -->
+              <!-- CARD 5 -->
               <div class="form-card">
                 <div class="form-card-heading">
                   <div>
@@ -268,29 +251,19 @@
                     <p>Anything else you'd like to add?</p>
                   </div>
                 </div>
-               
+                <textarea
+                  id="additionalInterests"
+                  name="additionalInterests"
+                  rows="7"
+                  cols="70"
+                  maxlength="500"
+                  placeholder="Share any other interests or information you'd like to include in your profile."
+                ></textarea>
               </div>
 
-              <!-- CARD 7: Agreement -->
-              <div class="form-card agreement-card">
-                <div class="form-card-heading">
-                  <div>
-                    <h3>Agreement</h3>
-                    <p>Final step before submitting</p>
-                  </div>
-                </div>
-                <!-- Add Agreement checkbox/inputs here -->
-              </div>
-
-              <!-- FORM BUTTONS -->
               <div class="form-actions">
-                <button type="submit" class="primary-button">
-                  Preview My Profile
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
                 <button type="reset" class="secondary-button">
-                  <i class="fa-solid fa-rotate-left"></i>
-                  Clear Form
+                  <i class="fa-solid fa-rotate-left"></i> Clear Form
                 </button>
               </div>
 
@@ -303,53 +276,57 @@
               <p class="form-note">
                 <i class="fa-solid fa-circle-info"></i>
                 In this prototype, submitting the form demonstrates client-side
-                validation and feedback only. It does not create an account or
-                store personal information.
+                validation and feedback only.
               </p>
             </form>
           </div>
         </div>
       </section>
+
       <section>
-        <!-- RIGHT COLUMN: NEXT STEPS -->
         <aside class="next-steps-panel">
-          <span class="section-label">YOUR NEXT STEPS</span>
-          <h2>What Happens Next?</h2>
+          <h1>What Happens Next?</h1>
           <p class="panel-intro">
             A little preparation can make your future skill exchange more useful
             and enjoyable.
           </p>
 
           <div class="next-step">
-            <span class="next-step-number">01</span>
             <div>
-              <h3>Review Your Information</h3>
-              <p>
-                Check that your offered skills and learning goals are clearly
-                described.
-              </p>
+              <span class="next-step-number">01</span>
+              <div>
+                <h3>Review Your Information</h3>
+                <p>
+                  Check that your offered skills and learning goals are clearly
+                  described.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="next-step">
-            <span class="next-step-number">02</span>
             <div>
-              <h3>Explore Compatible Skills</h3>
-              <p>
-                Browse sample listings to see how your interests could
-                complement someone else's abilities.
-              </p>
+              <span class="next-step-number">02</span>
+              <div>
+                <h3>Explore Compatible Skills</h3>
+                <p>
+                  Browse sample listings to see how your interests could
+                  complement someone else's abilities.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="next-step">
-            <span class="next-step-number">03</span>
             <div>
-              <h3>Plan a Fair Exchange</h3>
-              <p>
-                In a future version, members could agree availability, goals and
-                how much time each person contributes.
-              </p>
+              <span class="next-step-number">03</span>
+              <div>
+                <h3>Plan a Fair Exchange</h3>
+                <p>
+                  In a future version, members could agree availability, goals
+                  and how much time each person contributes.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -361,22 +338,6 @@
             </p>
           </div>
         </aside>
-      </section>
-
-      <!-- Closing Section -->
-      <section class="join-closing">
-        <div class="closing-content">
-          <span class="section-label">START SHARING</span>
-          <h2>You Have Something Valuable to Share.</h2>
-          <p>
-            Learning does not always begin with a classroom or a course.
-            Sometimes it begins with two people willing to help each other.
-          </p>
-          <a href="ExploreSkills.html" class="closing-button">
-            Explore Skills
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
       </section>
     </main>
 
