@@ -36,474 +36,164 @@
       </div>
     </nav>
 
-    <main>
-      <!-- Page Heading -->
+    <main id="JoinUs">
       <section class="Hero-Section" id="JoinSkillSwap">
         <div class="intro-para">
-          <h1 class="section-label">BECOME A MEMBER</h2>
+          <span>Become a Member</span>
+          <h1 class="section-label">YOUR LEARNING JOURNEY STARTS HERE</h1>
 
           <h3>Your Learning Journey Starts Here</h3>
 
           <p>
-            Everyone begins somewhere. You may already have a skill you are
-            proud of, or you may simply be curious. Either way, SkillSwap is
-            built on the idea that learning can be shared. Use the form below to
-            see how a future member could describe their interests, the skills
-            they can share and the skills they want to learn.
+            Everyone begins somewhere. Tell us what you can share and what you
+            want to learn, and see how a future member profile could look.
           </p>
         </div>
       </section>
 
-      <!-- Join Form and Side Panel -->
+      <!-- JOIN SECTION -->
       <section class="join-section">
         <div class="join-layout">
-          <!-- LEFT COLUMN: FORM -->
           <div class="form-column">
-            <div class="form-heading">
-              <span class="section-label">SECTION 01</span>
-
-              <h2>Create Your Skill Profile</h2>
-
-              <p>Tell us a little about yourself.</p>
-
-              <p>
-                A good profile explains who you are as a learner, what you can
-                offer and what you hope to gain. Keep it clear and honest.
-              </p>
-            </div>
-
-            <!-- Progress Indicator -->
-            <div class="form-progress">
-              <div class="progress-heading">
-                <span>Profile completion</span>
-                <span>7 steps</span>
-              </div>
-
-              <div class="progress-track">
-                <div class="progress-fill"></div>
-              </div>
-
-              <div class="progress-steps">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
-                <span>7</span>
-              </div>
-            </div>
-
-            <!-- Profile Form -->
             <form class="join-form" id="joinForm">
-              <!-- CARD 1: Personal Information -->
+              <!-- CARD 1: Personal Info -->
               <div class="form-card">
                 <div class="form-card-heading">
-                  <span class="step-number">01</span>
-
                   <div>
                     <h3>Personal Information</h3>
                     <p>Let's get to know you.</p>
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="fullName">Full name</label>
-
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter your full name"
-                    autocomplete="name"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email address</label>
-
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="ageGroup">Age group</label>
-
-                  <select id="ageGroup" name="ageGroup" required>
-                    <option value="" disabled selected>
-                      Select your age group
-                    </option>
-
-                    <option value="under-18">Under 18</option>
-                    <option value="18-24">18–24</option>
-                    <option value="25-34">25–34</option>
-                    <option value="35-and-above">35 and above</option>
-                    <option value="prefer-not-to-say">Prefer not to say</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="country">Country or region</label>
-
-                  <input
-                    type="text"
-                    id="country"
-                    name="country"
-                    placeholder="Enter your country or region"
-                  />
-                </div>
-              </div>
-
-              <!-- CARD 2: Skills You Can Offer -->
-              <div class="form-card">
-                <div class="form-card-heading">
-                  <span class="step-number">02</span>
-
-                  <div>
-                    <h3>Skills You Can Offer</h3>
-                    <p>What can you teach someone else?</p>
-                  </div>
-                </div>
-
-                <p class="card-intro">
-                  Think of skills you can explain, demonstrate or help someone
-                  practise.
-                </p>
-
-                <div class="form-group">
-                  <label for="offerCategory">Skill category</label>
-
-                  <select id="offerCategory" name="offerCategory" required>
-                    <option value="" disabled selected>
-                      Choose a skill category
-                    </option>
-
-                    <option>Technology and Programming</option>
-                    <option>Languages and Communication</option>
-                    <option>Art and Graphic Design</option>
-                    <option>Photography and Video</option>
-                    <option>Business and Productivity</option>
-                    <option>Creative Hobbies</option>
-                    <option>Fitness and Lifestyle</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="skillsOffered">Skills offered</label>
-
-                  <input
-                    type="text"
-                    id="skillsOffered"
-                    name="skillsOffered"
-                    placeholder="Example: Beginner HTML and CSS"
-                    required
-                  />
-
-                  <small>
-                    Be specific. "Basic HTML and simple webpages" is more useful
-                    than "I know computers."
-                  </small>
-                </div>
-
-                <div class="form-group">
-                  <label for="experienceLevel">Experience level</label>
-
-                  <select id="experienceLevel" name="experienceLevel" required>
-                    <option value="" disabled selected>
-                      Select your experience level
-                    </option>
-
-                    <option>Beginner</option>
-                    <option>Intermediate</option>
-                    <option>Advanced</option>
-                  </select>
-
-                  <small>
-                    Choose the level that matches your real experience.
-                  </small>
-                </div>
-
-                <div class="form-group">
-                  <label for="offerDescription">Short description</label>
-
-                  <textarea
-                    id="offerDescription"
-                    name="offerDescription"
-                    rows="5"
-                    placeholder="Explain what you can teach and the topics you are comfortable covering"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-
-              <!-- CARD 3: Skills You Want to Learn -->
-              <div class="form-card">
-                <div class="form-card-heading">
-                  <span class="step-number">03</span>
-
-                  <div>
-                    <h3>Skills You Want to Learn</h3>
-                    <p>What would you like to discover?</p>
-                  </div>
-                </div>
-
-                <p class="card-intro">
-                  Choose a skill and say what you hope to achieve. A specific
-                  goal helps find a suitable exchange.
-                </p>
-
-                <div class="form-group">
-                  <label for="wantedSkill">Skill you want to learn</label>
-
-                  <input
-                    type="text"
-                    id="wantedSkill"
-                    name="wantedSkill"
-                    placeholder="Example: Basic graphic design"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="learningLevel"> Current experience level </label>
-
-                  <select id="learningLevel" name="learningLevel" required>
-                    <option value="" disabled selected>
-                      Select your current level
-                    </option>
-
-                    <option>Complete beginner</option>
-                    <option>Some basic knowledge</option>
-                    <option>Intermediate</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="learningGoal">Your learning goal</label>
-
-                  <textarea
-                    id="learningGoal"
-                    name="learningGoal"
-                    rows="5"
-                    placeholder="Example: I want to learn how to design a simple poster using typography and colour"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-
-              <!-- CARD 4: Preferred Learning Method -->
-              <div class="form-card">
-                <div class="form-card-heading">
-                  <span class="step-number">04</span>
-
-                  <div>
-                    <h3>Preferred Learning Method</h3>
-                    <p>How would you prefer to learn?</p>
-                  </div>
-                </div>
-
-                <div class="radio-options">
-                  <label class="choice-option">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName">Full name</label>
                     <input
-                      type="radio"
-                      name="learningMethod"
-                      value="Online video call"
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="Enter your full name"
+                      autocomplete="name"
                       required
                     />
-
-                    <span>Online video call</span>
-                  </label>
-
-                  <label class="choice-option">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
                     <input
-                      type="radio"
-                      name="learningMethod"
-                      value="Text-based discussion"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email address"
+                      autocomplete="email"
+                      required
                     />
+                  </div>
+                </div>
 
-                    <span>Text-based discussion</span>
-                  </label>
-
-                  <label class="choice-option">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="ageGroup">Age group</label>
+                    <select id="ageGroup" name="ageGroup" required>
+                      <option value="" disabled selected>Select Age</option>
+                      <option value="under-18">Under 18</option>
+                      <option value="18-24">18–24</option>
+                      <option value="25-34">25–34</option>
+                      <option value="35-and-above">35 and above</option>
+                      <option value="prefer-not-to-say">
+                        Prefer not to say
+                      </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Country or region</label>
                     <input
-                      type="radio"
-                      name="learningMethod"
-                      value="Shared documents and exercises"
+                      type="text"
+                      id="country"
+                      name="country"
+                      placeholder="Enter your country or region"
                     />
-
-                    <span>Shared documents and exercises</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="radio"
-                      name="learningMethod"
-                      value="In-person learning"
-                    />
-
-                    <span>In-person learning, where appropriate</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="radio"
-                      name="learningMethod"
-                      value="Flexible or undecided"
-                    />
-
-                    <span>Flexible or undecided</span>
-                  </label>
+                  </div>
                 </div>
               </div>
 
-              <!-- CARD 5: Availability -->
+              <!-- CARD 2 -->
               <div class="form-card">
                 <div class="form-card-heading">
-                  <span class="step-number">05</span>
+                  <div>
+                    <h3>Skills You Can Offer</h3>
+                    <p>What can you share with others?</p>
+                  </div>
+                </div>
+                <!-- Add inputs for Skills You Can Offer here -->
+              </div>
 
+              <!-- CARD 3 -->
+              <div class="form-card">
+                <div class="form-card-heading">
+                  <div>
+                    <h3>Skills You Want to Learn</h3>
+                    <p>What are you hoping to gain?</p>
+                  </div>
+                </div>
+                <!-- Add inputs for Skills You Want to Learn here -->
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="form-card">
+                <div class="form-card-heading">
+                  <div>
+                    <h3>Preferred Learning Method</h3>
+                    <p>How do you learn best?</p>
+                  </div>
+                </div>
+                <!-- Add inputs for Preferred Learning Method here -->
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="form-card">
+                <div class="form-card-heading">
                   <div>
                     <h3>Availability</h3>
-                    <p>When are you generally available?</p>
+                    <p>When are you free to swap skills?</p>
                   </div>
                 </div>
-
-                <div class="checkbox-options">
-                  <label class="choice-option">
-                    <input
-                      type="checkbox"
-                      name="availability"
-                      value="Weekday mornings"
-                    />
-
-                    <span>Weekday mornings</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="checkbox"
-                      name="availability"
-                      value="Weekday afternoons"
-                    />
-
-                    <span>Weekday afternoons</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="checkbox"
-                      name="availability"
-                      value="Weekday evenings"
-                    />
-
-                    <span>Weekday evenings</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="checkbox"
-                      name="availability"
-                      value="Weekends"
-                    />
-
-                    <span>Weekends</span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input
-                      type="checkbox"
-                      name="availability"
-                      value="Flexible schedule"
-                    />
-
-                    <span>Flexible schedule</span>
-                  </label>
-                </div>
+                <!-- Add inputs for Availability here -->
               </div>
 
-              <!-- CARD 6: Additional Interests -->
+              <!-- CARD 6 -->
               <div class="form-card">
                 <div class="form-card-heading">
-                  <span class="step-number">06</span>
-
                   <div>
                     <h3>Additional Interests</h3>
-                    <p>Tell us more.</p>
+                    <p>Anything else you'd like to add?</p>
                   </div>
                 </div>
-
-                <div class="form-group">
-                  <label for="additionalInterests">
-                    Other interests and preferences
-                  </label>
-
-                  <textarea
-                    id="additionalInterests"
-                    name="additionalInterests"
-                    rows="5"
-                    placeholder="Describe any other interests, goals or preferences that could help plan a useful exchange"
-                  ></textarea>
-
-                  <small class="privacy-note">
-                    Please do not include passwords, banking details or other
-                    sensitive information.
-                  </small>
-                </div>
+                <!-- Add inputs for Additional Interests here -->
               </div>
 
               <!-- CARD 7: Agreement -->
               <div class="form-card agreement-card">
                 <div class="form-card-heading">
-                  <span class="step-number">07</span>
-
                   <div>
                     <h3>Agreement</h3>
-                    <p>A few things before you continue.</p>
+                    <p>Final step before submitting</p>
                   </div>
                 </div>
-
-                <div class="agreement-options">
-                  <label class="choice-option">
-                    <input type="checkbox" name="accuracyAgreement" required />
-
-                    <span>
-                      I confirm that the information I have entered is accurate
-                      to the best of my knowledge.
-                    </span>
-                  </label>
-
-                  <label class="choice-option">
-                    <input type="checkbox" name="communityAgreement" required />
-
-                    <span>
-                      I agree to communicate respectfully and follow the
-                      community guidelines.
-                    </span>
-                  </label>
-                </div>
+                <!-- Add Agreement checkbox/inputs here -->
               </div>
 
-              <!-- Form Buttons -->
+              <!-- FORM BUTTONS -->
               <div class="form-actions">
                 <button type="submit" class="primary-button">
                   Preview My Profile
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
-
                 <button type="reset" class="secondary-button">
                   <i class="fa-solid fa-rotate-left"></i>
                   Clear Form
                 </button>
               </div>
 
-              <!-- Form Feedback -->
               <div
                 id="formFeedback"
                 class="form-feedback"
@@ -518,81 +208,70 @@
               </p>
             </form>
           </div>
+        </div>
+      </section>
+      <section>
+        <!-- RIGHT COLUMN: NEXT STEPS -->
+        <aside class="next-steps-panel">
+          <span class="section-label">YOUR NEXT STEPS</span>
+          <h2>What Happens Next?</h2>
+          <p class="panel-intro">
+            A little preparation can make your future skill exchange more useful
+            and enjoyable.
+          </p>
 
-          <!-- RIGHT COLUMN: WHAT HAPPENS NEXT -->
-          <aside class="next-steps-panel">
-            <span class="section-label">YOUR NEXT STEPS</span>
-
-            <h2>What Happens Next?</h2>
-
-            <p class="panel-intro">
-              A little preparation can make your future skill exchange more
-              useful and enjoyable.
-            </p>
-
-            <div class="next-step">
-              <span class="next-step-number">01</span>
-
-              <div>
-                <h3>Review Your Information</h3>
-
-                <p>
-                  Check that your offered skills and learning goals are clearly
-                  described.
-                </p>
-              </div>
-            </div>
-
-            <div class="next-step">
-              <span class="next-step-number">02</span>
-
-              <div>
-                <h3>Explore Compatible Skills</h3>
-
-                <p>
-                  Browse sample listings to see how your interests could
-                  complement someone else's abilities.
-                </p>
-              </div>
-            </div>
-
-            <div class="next-step">
-              <span class="next-step-number">03</span>
-
-              <div>
-                <h3>Plan a Fair Exchange</h3>
-
-                <p>
-                  In a future version, members could agree availability, goals
-                  and how much time each person contributes.
-                </p>
-              </div>
-            </div>
-
-            <div class="panel-decoration">
-              <i class="fa-solid fa-lightbulb"></i>
-
+          <div class="next-step">
+            <span class="next-step-number">01</span>
+            <div>
+              <h3>Review Your Information</h3>
               <p>
-                Every skill has value. You do not need to be an expert to help
-                someone learn.
+                Check that your offered skills and learning goals are clearly
+                described.
               </p>
             </div>
-          </aside>
-        </div>
+          </div>
+
+          <div class="next-step">
+            <span class="next-step-number">02</span>
+            <div>
+              <h3>Explore Compatible Skills</h3>
+              <p>
+                Browse sample listings to see how your interests could
+                complement someone else's abilities.
+              </p>
+            </div>
+          </div>
+
+          <div class="next-step">
+            <span class="next-step-number">03</span>
+            <div>
+              <h3>Plan a Fair Exchange</h3>
+              <p>
+                In a future version, members could agree availability, goals and
+                how much time each person contributes.
+              </p>
+            </div>
+          </div>
+
+          <div class="panel-decoration">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>
+              Every skill has value. You do not need to be an expert to help
+              someone learn.
+            </p>
+          </div>
+        </aside>
       </section>
 
       <!-- Closing Section -->
       <section class="join-closing">
         <div class="closing-content">
           <span class="section-label">START SHARING</span>
-
           <h2>You Have Something Valuable to Share.</h2>
-
           <p>
             Learning does not always begin with a classroom or a course.
             Sometimes it begins with two people willing to help each other.
           </p>
-
           <a href="ExploreSkills.html" class="closing-button">
             Explore Skills
             <i class="fa-solid fa-arrow-right"></i>
@@ -601,15 +280,17 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <a href="index.html" class="logo"> Skill<span>Swap</span> </a>
-
-        <p>Share what you know. Discover what you can learn.</p>
-
-        <p class="copyright">&copy; 2026 SkillSwap. All rights reserved.</p>
+    <!--Footer-->
+    <footer class="Footer">
+      <div class="Footer-Links">
+        <a href="./index.html#home">Home</a>
+        <a href="./HowItWorks.html">How It Works</a>
+        <a href="./JoinSkillSwap.html#JoinUs">Join Us</a>
+        <a href="#">Explore </a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
       </div>
+      <p>&copy; 2026 SkillSwap. All rights reserved.</p>
     </footer>
   </body>
 </html>
