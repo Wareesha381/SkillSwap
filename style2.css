@@ -25,14 +25,13 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #f0eaf7;
-    border-radius: 50px;
+    border-radius: 70px;
     box-shadow: 4px 4px 10px #6043cb;
-    margin: 3% 5% 1%;
-    padding: 20px 20px;
+    margin: 1% 3%;
+    padding: 25px 35px;
     position: static;
     top: 10px;
     z-index: 999;
-    opacity: 0;
     animation: fadeUp 0.9s ease-out forwards;
     animation-delay: 0.2s;
 }
@@ -47,7 +46,11 @@ header {
     font-size: 30px;
     margin-left: 50px;
 }
-
+.Main-navigation {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+}
 .Main-navigation ul {
     display: flex;
     align-items: center;
@@ -244,7 +247,8 @@ h1, h2, h3 {
 }
 
 .safety-title > p {
-    margin-bottom: 20px;
+      margin-bottom: 50px;
+     font-size: 20px;
 }
 
 .safety-title ul {
@@ -258,7 +262,7 @@ h1, h2, h3 {
     background-color: #faf8f5;
     border-left: 4px solid #553baf;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
 .safety-title li:hover{
@@ -268,15 +272,15 @@ h1, h2, h3 {
 
 .safety-title a {
     color: #553baf;
-    font-weight: bold;
-    text-decoration: underline;
+   font-weight: bold;
+    text-decoration: underline;  
 }
 
 .safety-title a:hover {
-    color: #4a3694;
+  color: #4a3694;
     text-decoration: underline;
-    box-shadow: 4px 4px 16px #aa9ae3;
     transform: translateY(-3px);
+   
 }
 
 /* Section 5: Privacy */
@@ -288,16 +292,18 @@ h1, h2, h3 {
     background-color: #f0eaf7;
     border-radius: 15px;
     box-shadow: 2px 1px 20px #aa9ae3;
+    border-left: 5px solid #4a3694;
 }
 
 .privacy-title h2 {
-    font-size: 40px;
+     font-size: 45px;
+    margin-bottom: 32px;
 }
 
 .privacy-title a {
     color: #553baf;
     font-weight: bold;
-    text-decoration: none;
+     text-decoration: underline;
 }
 
 .privacy-title a:hover {
@@ -311,13 +317,14 @@ h1, h2, h3 {
     margin: 80px 8%;
     padding: 40px;
     text-align: center;
-    background-color: #fff3ed;
+    background-color: #f0eaf7;
     border-radius: 15px;
-    border-left: 5px solid #f8d4be;
+    border-left: 5px solid #4a3694;
+     box-shadow: 2px 1px 20px #aa9ae3;
 }
 
 .report-title h2 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .report-title p {
@@ -327,12 +334,12 @@ h1, h2, h3 {
 .report-title a {
     color: #553baf;
     font-weight: bold;
-    text-decoration: none;
+   text-decoration: underline;
 }
 
 .report-title a:hover {
     color: #4a3694;
-    text-decoration: underline;
+    
 }
 
 /* Section 7: FAQs */
@@ -408,7 +415,7 @@ h1, h2, h3 {
 
 .primary-btn {
     background-color: #5e44bc;
-    color: #fff;
+    color: #ffffff;
 }
 
 .secondary-btn {
@@ -420,7 +427,7 @@ h1, h2, h3 {
 .primary-btn:hover,
 .secondary-btn:hover {
     background-color: #4a3694;
-    color: #fff;
+    color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 4px 4px 10px #aa9ae3;
 }
@@ -443,13 +450,12 @@ footer ul {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #c1c1c1;
     font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
     color: #ededed;
 }
 
