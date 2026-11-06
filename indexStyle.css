@@ -20,7 +20,7 @@ body {
   position: sticky;
   margin: 3% 5% 1%;
   position: sticky;
-  top: 10px;
+  top: 5px;
   z-index: 999;
   opacity: 0;
   animation: fadeUp 0.9s ease-out forwards;
@@ -126,7 +126,7 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 52px;
   background: linear-gradient(to right, #2b1c64, #5e528f, #493f6c);
   -webkit-background-clip: text;
   background-clip: text;
@@ -246,8 +246,7 @@ h3 {
   box-shadow: 2px 1px 1000px #2b1c64;
 }
 .Learning-Way > p {
-  border-radius: 10px;
-  border: 2px dashed #553baf;
+  border-left: 5px solid #e8ab86;
   width: 80%;
   padding: 10px;
   margin-top: 70px;
@@ -324,7 +323,7 @@ h3 {
 .section3-list li {
   list-style-type: none;
   margin-bottom: 50px;
-  border-left: 4px solid #f8d4be;
+  border-left: 5px solid #e8ab86;
   padding: 20px;
 }
 
