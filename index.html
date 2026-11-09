@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>SkillSwap</title>
+    <title>Home</title>
   </head>
   <body>
     <main>
@@ -28,9 +28,9 @@
           <a href="#home" target="_self">Home</a>
           <a href="./HowItWorks.html" target="_self">How It Works</a>
           <a href="./JoinSkillSwap.html" target="_self">Join Us</a>
-          <a href="#">Explore</a>
+          <a href="./explore.html">Explore</a>
           <a href="#">Gallery</a>
-          <a href="#">About</a>
+          <a href="./about.html">About</a>
         </div>
         <div>
           <button type="button">Get Started</button>
@@ -184,25 +184,43 @@
         </button>
       </section>
 
-      <!--Section 4: See an exchange in action-->
+      <!--Section 4: See an exchange in action (Testimonial)-->
       <section class="Featured-Exchange">
-        <h1>Different skills one shared goal</h1>
-        <p>
-          Maya makes social media graphics and wants to improve her photography.
-          She can teach colour, layout and typography in return for help
-          composing better photos.
-        </p>
-        <ul class="Exchange-Tags">
-          <li>Offered: Graphic design</li>
-          <li aria-hidden="true">⇄</li>
-          <li>Wanted: Photography</li>
-        </ul>
-        <a href="#">Meet more learners in the Gallery</a>
-        <p class="Note">
-          <em>
-            This is an illustrative example of how a skill exchange could work.
-          </em>
-        </p>
+        <div class="sketch-card">
+          <!-- The Top Row (Picture and Name) -->
+          <div class="sketch-header">
+            <div class="sketch-pic">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200"
+                alt="Maya"
+              />
+            </div>
+            <div class="sketch-name">
+              <h2>Maya</h2>
+            </div>
+          </div>
+
+          <!-- The Divider (with the 'x' from your sketch) -->
+          <div class="sketch-divider">
+            <span>✕</span>
+            <!-- The 'x' from your drawing -->
+          </div>
+
+          <!-- The Vertical Text -->
+          <div class="sketch-body">
+            <p>
+              Maya makes social media graphics and wants to improve her
+              photography. She can teach colour, layout and typography in return
+              for help composing better photos.
+            </p>
+
+            <div class="Exchange-Tags">
+              <span>Offered: Graphic design</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>Wanted: Photography</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!--Section 6: Final call to action-->
@@ -226,9 +244,9 @@
         <a href="./index.html#home">Home</a>
         <a href="./HowItWorks.html">How It Works</a>
         <a href="./JoinSkillSwap.html">Join Us</a>
-        <a href="#">Explore </a>
+        <a href="./explore.html">Explore </a>
         <a href="#">Gallery</a>
-        <a href="#">Contact</a>
+        <a href="./about.html">About</a>
       </div>
       <p>&copy; 2026 SkillSwap. All rights reserved.</p>
     </footer>

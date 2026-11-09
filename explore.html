@@ -1,145 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>ExploreSkills</title>
-    <link rel="stylesheet" href="explore.css">
-</head>
-<body>
-    <header>
-          <a href="index.html" class="SkillSwap-Home">
-            <strong>SkillSwap</strong>
-        </a>
+  </head>
+  <body>
+    <!--Nav bar Content-->
+    <nav class="Nav-Bar">
+      <div class="Logo">
+        <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+        <h2>SkillSwap</h2>
+      </div>
+      <div class="Nav-Bar-Links">
+        <a href="./index.html" target="_self">Home</a>
+        <a href="./HowItWorks.html" target="_self">How It Works</a>
+        <a href="./JoinSkillSwap.html" target="_self">Join Us</a>
+        <a href="#explore">Explore</a>
+        <a href="#">Gallery</a>
+        <a href="./about.html">About</a>
+      </div>
+      <div>
+        <button type="button">Get Started</button>
+      </div>
+    </nav>
 
-        <nav class="Main-navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="explore.html" aria-current="page">Explore Skills</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section  class="page-header">
-        <h1>Discover Skills. Find New Possibilities.</h1>
-        <p>Everyone has different interests, experiences and learning goals. This page brings them
-            together through sample listings that show how people could share knowledge and learn from one 
-            another. Whether you like technology, creative work, languages or practical skills, start by
-            exploring the categories below.</p>
-         </section>
+    <section class="page-header" id="explore">
+      <h1>Discover Skills. Find New Possibilities.</h1>
+      <p>
+        Everyone has different interests, experiences and learning goals. This
+        page brings them together through sample listings that show how people
+        could share knowledge and learn from one another. Whether you like
+        technology, creative work, languages or practical skills, start by
+        exploring the categories below.
+      </p>
+    </section>
 
     <section class="search-bar">
-        <h2>Search and Browse</h2>
-        <input type="text" placeholder="Search for skills...">
-        <button type="button">Search</button>
-        <div class="categories">
-            <h3>Browse by Category</h3>
-            <button type="button">All Skills</button>
-            <button type="button">Technology</button>
-             <button type="button">Languages</button>
-              <button type="button">Art & Design</button>
-               <button type="button">Photography & Video</button>
-                <button type="button">Business & Productivity</button>
-                 <button type="button">Creative Hobbies</button>
-                  <button type="button">Fitness & Lifestyle</button>
-            </div>
-            <p> Not sure where to start? Explore something you already enjoy,
-             or pick a skill that would help you reach a personal or academic goal.
-             You may find an exchange you had not considered.</p>
-        </section>
-        <section class="chosing-exchange">
-              <h2>Choosing an Exchange</h2>
-              <p> Look at each person's experience level, the time required and the
-             outcomes you want, then agree on the topics you will cover.
-             Find an exchange that works for both people.</p>
-        </section>
-        <section class="Sample-listings">
-            <h2>Explore Available Skills</h2>
-            <div class="list-card">
-               <h3>Beginner Web Development</h3>
-               <p><strong>Offered:</strong>  HTML and CSS fundamentals.</p>
-               <p><strong>Wanted:</strong> Graphic design basics.</p>
-                <p><strong>Experience Level:</strong> Beginner</p>
-                 <p><strong>Learning Goal:</strong>  Learn HTML and CSS to create a simple personal webpage</p>
-                  <p><strong>Activity:</strong> Create a simple personal webpage using HTML and CSS</p>
-            </div>
-             <div class="list-card">
-               <h3>Spreadsheet Fundamentals</h3>
-               <p><strong>Offered:</strong> Spreadsheet organization and basic formulas.</p>
-               <p><strong>Wanted:</strong> Presentation design.</p>
-                <p><strong>Experience Level:</strong> Beginner</p>
-                 <p><strong>Learning Goal:</strong> Learn to organize data and use basic spreadsheet formulas.</p>
-                  <p><strong>Activity:</strong> Organize a small dataset and create a summary slide.</p>
-            </div>
-             <div class="list-card">
-               <h3>Conversational English practice.</h3>
-               <p><strong>Offered:</strong> Conversational English practice.</p>
-               <p><strong>Wanted:</strong> Beginner Spanish.</p>
-                <p><strong>Experience Level:</strong> Beginner</p>
-                 <p><strong>Learning Goal:</strong> Improve everyday English communication.</p>
-                  <p><strong>Activity:</strong> Practice introductions and everyday conversations.</p>
-            </div>
-             <div class="list-card">
-               <h3>Public Speaking Basics</h3>
-               <p><strong>Offered:</strong> Presentation practice and speaking confidence.</p>
-               <p><strong>Wanted:</strong> Creative writing.</p>
-                <p><strong>Experience Level:</strong> Beginner to Intermediate.</p>
-                 <p><strong>Learning Goal:</strong> Improve public speaking skills.</p>
-                  <p><strong>Activity:</strong> Prepare and deliver a short presentation based on a story.</p>
-            </div>
-              <div class="list-card">
-               <h3>Poster and Social Media Design</h3>
-               <p><strong>Offered:</strong> Basic graphic design and layout.</p>
-               <p><strong>Wanted:</strong> Photography fundamentals.</p>
-                <p><strong>Experience Level:</strong> Beginner.</p>
-                 <p><strong>Learning Goal:</strong> Learn basic poster and social media design.</p>
-                  <p><strong>Activity:</strong> Design a poster using an original photograph.</p>
-            </div>
-             <div class="list-card">
-               <h3>Creative Writing</h3>
-               <p><strong>Offered:</strong> Story ideas, structure and writing practice.</p>
-               <p><strong>Wanted:</strong> Photography basics.</p>
-                <p><strong>Experience Level:</strong> Beginner.</p>
-                 <p><strong>Learning Goal:</strong> Improve creative writing skills.</p>
-                  <p><strong>Activity:</strong> Write a short description inspired by a photograph.</p>
-            </div>
-             <div class="list-card">
-               <h3>Presentation Design</h3>
-               <p><strong>Offered:</strong> Slide organization and visual presentation.</p>
-               <p><strong>Wanted:</strong> Spreadsheet basics.</p>
-                <p><strong>Experience Level:</strong> Beginner.</p>
-                 <p><strong>Learning Goal:</strong> Create clear and attractive presentations.</p>
-                  <p><strong>Activity:</strong> Turn spreadsheet information into a concise presentation.</p>
-            </div>
-             <div class="list-card">
-               <h3>Beginner Video Editing</h3>
-               <p><strong>Offered:</strong> Basic editing and video sequencing.</p>
-               <p><strong>Wanted:</strong> Web design fundamentals.</p>
-                <p><strong>Experience Level:</strong> Beginner.</p>
-                 <p><strong>Learning Goal:</strong> Learn basic video editing techniques.</p>
-                  <p><strong>Activity:</strong> Create a short introduction video.</p>
-            </div>
-        </section>
-        <section class="closing-section">
-            <h2>Your Next Learning Opportunity Starts with Curiosity</h2>
-            <p> Explore the skills that interest you, think about what you can offer,
-                and imagine what you could achieve through mutual learning.</p>
-                <a href="JoinSkillSwap.html" class="btn-primary">Join SkillSwap</a>
-                <a href="how-it-works.html" class="btn-secondary">Learn How SkillSwap Works</a>
-        </section>
-           <footer class="Footer">
+      <h2>Search and Browse</h2>
+      <input type="text" placeholder="Search for skills..." />
+      <button type="button">Search</button>
+      <div class="categories">
+        <h3>Browse by Category</h3>
+        <button type="button">All Skills</button>
+        <button type="button">Technology</button>
+        <button type="button">Languages</button>
+        <button type="button">Art & Design</button>
+        <button type="button">Photography & Video</button>
+        <button type="button">Business & Productivity</button>
+        <button type="button">Creative Hobbies</button>
+        <button type="button">Fitness & Lifestyle</button>
+      </div>
+      <p>
+        Not sure where to start? Explore something you already enjoy, or pick a
+        skill that would help you reach a personal or academic goal. You may
+        find an exchange you had not considered.
+      </p>
+    </section>
+    <section class="chosing-exchange">
+      <h2>Choosing an Exchange</h2>
+      <p>
+        Look at each person's experience level, the time required and the
+        outcomes you want, then agree on the topics you will cover. Find an
+        exchange that works for both people.
+      </p>
+    </section>
+    <section class="Sample-listings">
+      <h2>Explore Available Skills</h2>
+      <div class="list-card">
+        <h3>Beginner Web Development</h3>
+        <p><strong>Offered:</strong> HTML and CSS fundamentals.</p>
+        <p><strong>Wanted:</strong> Graphic design basics.</p>
+        <p><strong>Experience Level:</strong> Beginner</p>
+        <p>
+          <strong>Learning Goal:</strong> Learn HTML and CSS to create a simple
+          personal webpage
+        </p>
+        <p>
+          <strong>Activity:</strong> Create a simple personal webpage using HTML
+          and CSS
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Spreadsheet Fundamentals</h3>
+        <p>
+          <strong>Offered:</strong> Spreadsheet organization and basic formulas.
+        </p>
+        <p><strong>Wanted:</strong> Presentation design.</p>
+        <p><strong>Experience Level:</strong> Beginner</p>
+        <p>
+          <strong>Learning Goal:</strong> Learn to organize data and use basic
+          spreadsheet formulas.
+        </p>
+        <p>
+          <strong>Activity:</strong> Organize a small dataset and create a
+          summary slide.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Conversational English practice.</h3>
+        <p><strong>Offered:</strong> Conversational English practice.</p>
+        <p><strong>Wanted:</strong> Beginner Spanish.</p>
+        <p><strong>Experience Level:</strong> Beginner</p>
+        <p>
+          <strong>Learning Goal:</strong> Improve everyday English
+          communication.
+        </p>
+        <p>
+          <strong>Activity:</strong> Practice introductions and everyday
+          conversations.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Public Speaking Basics</h3>
+        <p>
+          <strong>Offered:</strong> Presentation practice and speaking
+          confidence.
+        </p>
+        <p><strong>Wanted:</strong> Creative writing.</p>
+        <p><strong>Experience Level:</strong> Beginner to Intermediate.</p>
+        <p><strong>Learning Goal:</strong> Improve public speaking skills.</p>
+        <p>
+          <strong>Activity:</strong> Prepare and deliver a short presentation
+          based on a story.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Poster and Social Media Design</h3>
+        <p><strong>Offered:</strong> Basic graphic design and layout.</p>
+        <p><strong>Wanted:</strong> Photography fundamentals.</p>
+        <p><strong>Experience Level:</strong> Beginner.</p>
+        <p>
+          <strong>Learning Goal:</strong> Learn basic poster and social media
+          design.
+        </p>
+        <p>
+          <strong>Activity:</strong> Design a poster using an original
+          photograph.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Creative Writing</h3>
+        <p>
+          <strong>Offered:</strong> Story ideas, structure and writing practice.
+        </p>
+        <p><strong>Wanted:</strong> Photography basics.</p>
+        <p><strong>Experience Level:</strong> Beginner.</p>
+        <p><strong>Learning Goal:</strong> Improve creative writing skills.</p>
+        <p>
+          <strong>Activity:</strong> Write a short description inspired by a
+          photograph.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Presentation Design</h3>
+        <p>
+          <strong>Offered:</strong> Slide organization and visual presentation.
+        </p>
+        <p><strong>Wanted:</strong> Spreadsheet basics.</p>
+        <p><strong>Experience Level:</strong> Beginner.</p>
+        <p>
+          <strong>Learning Goal:</strong> Create clear and attractive
+          presentations.
+        </p>
+        <p>
+          <strong>Activity:</strong> Turn spreadsheet information into a concise
+          presentation.
+        </p>
+      </div>
+      <div class="list-card">
+        <h3>Beginner Video Editing</h3>
+        <p><strong>Offered:</strong> Basic editing and video sequencing.</p>
+        <p><strong>Wanted:</strong> Web design fundamentals.</p>
+        <p><strong>Experience Level:</strong> Beginner.</p>
+        <p>
+          <strong>Learning Goal:</strong> Learn basic video editing techniques.
+        </p>
+        <p><strong>Activity:</strong> Create a short introduction video.</p>
+      </div>
+    </section>
+    <section class="closing-section">
+      <h2>Your Next Learning Opportunity Starts with Curiosity</h2>
+      <p>
+        Explore the skills that interest you, think about what you can offer,
+        and imagine what you could achieve through mutual learning.
+      </p>
+      <a href="JoinSkillSwap.html" class="btn-primary">Join SkillSwap</a>
+      <a href="how-it-works.html" class="btn-secondary"
+        >Learn How SkillSwap Works</a
+      >
+    </section>
+    <!--Footer-->
+    <footer class="Footer">
       <div class="Footer-Links">
         <a href="./index.html#home">Home</a>
         <a href="./HowItWorks.html">How It Works</a>
         <a href="./JoinSkillSwap.html">Join Us</a>
-        <a href="./explore.html">Explore </a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./contact.html">Contact</a>
+        <a href="#explore">Explore </a>
+        <a href="#">Gallery</a>
+        <a href="./about.html">About</a>
       </div>
       <p>&copy; 2026 SkillSwap. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

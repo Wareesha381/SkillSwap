@@ -1,186 +1,257 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0eaf7;
-    border-radius: 70px;
-    box-shadow: 4px 4px 10px #6043cb;
-    margin: 1% 3%;
-    padding: 25px 35px;
-    position: static;
-    animation: fadeUp 0.9s ease-out forwards;
-    animation-delay: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0eaf7;
+  border-radius: 70px;
+  box-shadow: 4px 4px 10px #6043cb;
+  margin: 1% 3%;
+  padding: 25px 35px;
+  position: static;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
-.SkillSwap-Home {
-    text-decoration: none;
-    color: #553baf;
+.Nav-Bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0eaf7;
+  border-radius: 50px;
+  box-shadow: 4px 4px 10px #6043cb;
+  position: sticky;
+  margin: 3% 5% 1%;
+  position: sticky;
+  top: 5px;
+  z-index: 999;
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+  animation-delay: 0.2s;
+  justify-content: space-between;
 }
 
-.SkillSwap-Home strong {
-    font-family: "Fraunces", serif;
-    font-size: 30px;
-    margin-left: 50px;
-}
-.Main-navigation {
-    position: absolute;
-    left: 60%;
-    transform: translateX(-50%);
-}
-.Main-navigation ul {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
+.Nav-Bar > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 2% 1%;
 }
 
-.Main-navigation a {
-    text-decoration: none;
-    color: #000;
-    position: static;
-    padding-bottom: 5px;
-    white-space: nowrap;
+.Nav-Bar-Links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.Main-navigation a::after {
-    content: "";
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    border-radius: 2px;
-    background-color: #553baf;
-    transition: width 0.3s ease;
+.Nav-Bar-Links a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding-bottom: 5px;
+  white-space: nowrap;
 }
 
-.Main-navigation a:hover::after {
-    width: 100%;
+.Nav-Bar-Links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #553baf;
+  transition: width 0.3s ease;
 }
 
-.Main-navigation a:hover {
-    font-weight: bold;
-    color: #4a3694;
+.Nav-Bar-Links a:hover::after {
+  width: 100%;
+}
+.Nav-Bar-Links a:hover {
+  font-weight: bold;
+  color: #4a3694;
+}
+.Logo {
+  display: flex;
+  align-items: center;
 }
 
-.Main-navigation a[aria-current="page"] {
-    color: #553baf;
-    font-weight: bold;
+.Logo > h2 {
+  font-size: x-large;
+  padding: 3px 10px;
+  margin-top: 10px;
 }
-.page-header {
-    text-align: center;
-    background-color: #f0eaf7;
-    padding: 30px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    font-family: "Fraunces" serif;
-    height: 100px;
-    line-height: 25px;
-}
-.page-header h1 {
-    font-size: 40px;
-    color: #2c275e;
-    margin-bottom: 10px;
-}
-.page-header p {
-    font-size: 18px;
-    color:#000000;
-    margin:0 auto;
-    font-family:"Fraunces" serif;
-    line-height: 1.5;
 
+.Logo i {
+  color: #553baf;
+  width: 16%;
+  height: 10%;
 }
-.search-bar {
-    text-align: center;
-    background-color: #f0eaf7;
-    padding: 30px;
-    margin:40px 3%;
-    border-radius: 20px;
-}
-.search-bar h2{
-    color: #2c275e;
-    font-size: 35px;
-    font-family: "Fraunces", serif;
-    margin-bottom: 20px;
-}
-.search-bar input{
-    width: 50%;
-    padding: 15px;
-    border: 1px solid #dfd5f4;
-    border-radius: 10px;
-    font-size: 20px;
-    outline: none;
-}
-  .search-bar button {
-     background-color: #5e44bc;
+
+.Nav-Bar button {
+  background-color: #5e44bc;
   color: #f0eaf7;
   border-radius: 20px;
   padding: 10px 15px;
   margin-right: 5px;
   border: none;
   transition: transform 0.3s ease;
+}
 
-}  
+.Nav-Bar button:hover {
+  background-color: #4a3694;
+  transform: scale(1) translateY(-3px);
+  box-shadow: 4px 4px 10px #aa9ae3;
+  cursor: pointer;
+}
+.page-header {
+  text-align: center;
+  background-color: #f0eaf7;
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  font-family: "Fraunces" serif;
+  height: 100px;
+  line-height: 25px;
+}
+.page-header h1 {
+  font-size: 40px;
+  color: #2c275e;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 18px;
+  color: #000000;
+  margin: 0 auto;
+  font-family: "Fraunces" serif;
+  line-height: 1.5;
+}
+.search-bar {
+  text-align: center;
+  background-color: #f0eaf7;
+  padding: 30px;
+  margin: 40px 3%;
+  border-radius: 20px;
+}
+.search-bar h2 {
+  color: #2c275e;
+  font-size: 35px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #dfd5f4;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: none;
+}
+.search-bar button {
+  background-color: #5e44bc;
+  color: #f0eaf7;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border: none;
+  transition: transform 0.3s ease;
+}
 .search-bar button:hover {
-     background-color: #4a3694;
+  background-color: #4a3694;
   transform: scale(1) translateY(-3px);
   box-shadow: 4px 4px 10px #aa9ae3;
   cursor: pointer;
 }
 .exchange-section {
-    background-color: #f0eaf7;
-    margin: 40px 3%;
-    padding: 35px;
-    border-radius: 20px;
-    text-align: center;
+  background-color: #f0eaf7;
+  margin: 40px 3%;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
 }
 .chosing-exchange h2 {
-    color: #2c275e;
-    font-size: 25px;
-    font-family: "Fraunces", serif;
-    margin-bottom: 18px;
+  color: #2c275e;
+  font-size: 25px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 18px;
 }
-.chosing-exchange p{
-     color: #444;
-    font-size: 16px;
-    line-height: 1.8;
+.chosing-exchange p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
 }
-.Sample-listings{
-     margin: 50px 3%;
-    text-align: center;
+.Sample-listings {
+  margin: 50px 3%;
+  text-align: center;
 }
 .sample-listings h2 {
-    color: #2c275e;
-    font-size: 32px;
-    margin-bottom: 30px;
+  color: #2c275e;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 .list-card {
-     background-color: #faf8f5;
-    margin-bottom: 40px;
-    padding: 25px;
-    border-radius: 12px;
-    border-left: 5px solid #553baf;
-    transition: transform 0.3s ease;
-    list-style: none;
+  background-color: #faf8f5;
+  margin-bottom: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #553baf;
+  transition: transform 0.3s ease;
+  list-style: none;
 }
 .list-card h3 {
-    color: #553baf;
-    font-size: 22px;
-    margin-bottom: 20px;
+  color: #553baf;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 .list-card p {
-    color: #444;
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: left;
-    margin-bottom: 10px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 10px;
 }
 .list-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .list-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 3px 6px 15px #c9bce8;
+  transform: translateY(-5px);
+  box-shadow: 3px 6px 15px #c9bce8;
+}
+
+/*Footer*/
+.Footer {
+  background-color: #51408e;
+  padding: 20px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.Footer a {
+  width: 100%;
+  text-decoration: none;
+  color: #c1c1c1;
+  margin-right: 25px;
+  font-weight: bolder;
+}
+
+.Footer-Links a:hover {
+  font-size: bold;
+  text-decoration: underline;
+  font-size: bold;
+  color: #ededed;
+}
+.Footer p {
+  margin-top: 20px;
+  color: #ededed;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
