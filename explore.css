@@ -410,32 +410,3 @@ h3 {
     transform: translateY(0);
   }
 }
-
-@media (max-width: 900px) {
-  .Sample-listings {
-    grid-template-columns: 1fr;
-  }
-
-  .search-bar input {
-    width: 70%;
-  }
-}
-
-@media (max-width: 600px) {
-  .Nav-Bar-Links {
-    display: none; /* Hides links on mobile, you'd normally add a hamburger menu here */
-  }
-
-  .search-input-group {
-    flex-direction: column;
-  }
-
-  .search-bar input {
-    width: 100%;
-  }
-
-  .closing-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-}
